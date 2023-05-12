@@ -1,14 +1,13 @@
 body {
     margin: 0;
+    padding: 0;
+    font-family: 'Futura PT', sans-serif; 
 }
 
 nav {
-    display: flex;
-    position: sticky;
     z-index: 5;
-    width: 100%;
-    justify-content: space-between;
     padding: 2rem 1rem;
+    position: relative;
 }
 
 .nav-logo {
@@ -20,10 +19,10 @@ nav {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100vw;
+    width: 100%;
     height: 100vh;
     z-index: 2;
-    border-bottom: 90px solid #FAF4EA;
+    border-bottom: 10rem solid #FAF4EA;
 }
 
 .hero-left {
@@ -49,15 +48,71 @@ nav {
 }
 
 .hero-front {
-    position: absolute;
-    z-index: 1;
-    bottom: -90px;
-    left: 1rem;
-    width: 55%;
-    height: auto;
+    position: relative;
+    width: 100%;
+    height: fit-content;
+    padding-top: 10rem;
+    display: flex;
 }
 
-.hero-front > img {
-    width: 100%;
-    height: auto;
+.hero-front > .img-container {
+    flex: 0 0 55%;
+    max-width: 55%;
+    padding-right: 1rem;
+    padding-left: 1rem;
+}
+
+.hero-front > .img-container > .hold-img {
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+.hero-front > .img-container > .hold-img > img {
+    max-width: 100%;
+}
+
+.hero-front > .img-container > .hold-img > .overlay {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 350px;
+    height: 100%;
+    background-image: linear-gradient(to right,rgba(255,0,0,0),rgba(0,0,0,.7));
+}
+
+.hero-front > .img-container > .hold-img > .content {
+    position: absolute;
+    top: 12vw;
+    color: #FAF4EA;
+    width: fit-content;
+    left: 100%;
+    margin-left: -150px;
+}
+.hero-front > .img-container > .hold-img > .content > h1 {
+    font-size: 5rem;
+    margin: 2rem 0;
+    font-weight: 500;
+}
+.hero-front > .img-container > .hold-img > .content > h3 {
+    font-size: 2.5rem;
+    margin: 0;
+    font-weight: 400;
+}
+
+.hero-front > .position-container {
+    display: flex;
+    column-gap: 1rem;
+    align-items: center;
+    flex: 0 0 42%;
+    max-width: 42%;
+    align-self: flex-end;
+    color: #414241;
+    font-size: 1.3rem;
+}
+.hero-front > .position-container > i {
+    font-size: 0.8rem;
+}
+.hero-front > .position-container > h6 {
+    font-weight: 500;
 }

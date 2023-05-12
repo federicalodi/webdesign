@@ -6,25 +6,49 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./hamburger.css">
+    <link href="https://fonts.cdnfonts.com/css/futura-pt" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <title>Sage Restaurant</title>
 </head>
 <body>
-    <nav>
+    <nav role="navigation">
         <div class="left-nav">
             <a href="#">
-                <img src="./assets/white_logo.svg" class="nav-logo">
+                <img src="./assets/white_logo.svg" alt="logo" class="nav-logo">
             </a>
         </div>
-        <div class="right-nav">
-            hbgvf
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+            <a href="#"><li>Menu</li></a>
+            <a href="#"><li>Prenota</li></a>
+            <a href="#"><li>Info</li></a>
+            </ul>
         </div>
     </nav>
     <section class="hero">
         <div class="hero-left"></div>
         <div class="hero-right"></div>
         <div class="hero-front">
-            <img src="./assets/location_out.png">
+            <div class="img-container">
+                <div class="hold-img">
+                    <img src="./assets/location_out.png" alt="balcony image">
+                    <div class="overlay"></div>
+                    <div class="content">
+                        <h1>Sage Restaurant</h1>
+                        <h3>Crafting Exceptional Experiences</h3>
+                    </div>
+                </div>
+            </div>
+            <div class="position-container">
+                <i class="fa-solid fa-location-dot" style="color: #414241;"></i>
+                <h6>Piazza Gae Aulenti 4, Milano, MI</h6>
+            </div>
         </div>
     </section>
 </body>
