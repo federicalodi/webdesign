@@ -1,0 +1,63 @@
+body {
+    margin: 0;
+}
+
+nav {
+    display: flex;
+    position: sticky;
+    z-index: 5;
+    width: 100%;
+    justify-content: space-between;
+    padding: 2rem 1rem;
+}
+
+.nav-logo {
+    width: 10rem;
+    height: auto;
+}
+
+.hero {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 2;
+    border-bottom: 90px solid #FAF4EA;
+}
+
+.hero-left {
+    background-color: #465230;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 100%;
+}
+
+.hero-right {
+    background-image: url("./assets/location_in.jpg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+    box-shadow: inset 5000px 0 0 0 rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 60%;
+    height: 100%;
+}
+
+.hero-front {
+    position: absolute;
+    z-index: 1;
+    bottom: -90px;
+    left: 1rem;
+    width: 55%;
+    height: auto;
+}
+
+.hero-front > img {
+    width: 100%;
+    height: auto;
+}
