@@ -1,0 +1,17 @@
+body {
+    color: #414241;
+}
+
+nav {
+    background-color: #575F64;
+}
+
+section.prenota {
+    padding: 0 3rem;
+    margin-top: 1rem;
+    margin-bottom: 5rem;
+}
+
+section.prenota > h1 {
+    font-size: 2rem;
+}
