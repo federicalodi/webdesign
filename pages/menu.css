@@ -6,6 +6,7 @@ body {
 section.menu {
     padding: 0 3rem;
     margin-top: 1rem;
+    margin-bottom: 5rem;
 }
 
 section.menu > h1 {
