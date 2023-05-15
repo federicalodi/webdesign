@@ -5,6 +5,7 @@ body {
     background-color: #FAF4EA;
 }
 
+/*** NAVBAR ***/
 nav {
     z-index: 5;
     padding: 2rem 1rem;
@@ -15,7 +16,13 @@ nav {
     width: 10rem;
     height: auto;
 }
+@media only screen and (max-width: 1050px) {
+    .nav-logo {
+        width: 7.5rem;
+    }
+}
 
+/*** HERO ***/
 .hero {
     position: absolute;
     top: 0;
@@ -107,8 +114,86 @@ nav {
     margin: 0;
 }
 
-/* ADD MEDIA QUERY BREAKPOINT AT 1050px */
+@media only screen and (max-width: 1200px) {
+    .hero-front > .content > h1 {
+        font-size: 4rem;
+    }
+    .hero-front > .content > h3 {
+        font-size: 2rem;
+    }
+}
+@media only screen and (max-width: 900px) {
+    .hero {
+        height: 75vh;
+    }
+    .hero-front {
+        height: 75vh;
+    }
+    .hero-front > .content > h1 {
+        font-size: 3.25rem;
+    }
+    .hero-front > .content > h3 {
+        font-size: 1.75rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .hero {
+        height: 60vh;
+    }
+    .hero-front {
+        height: 60vh;
+    }
+    .hero-front > .content > h1 {
+        font-size: 3rem;
+    }
+    .hero-front > .content > h3 {
+        font-size: 1.5rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .hero {
+        height: 90vh;
+    }
+    .hero-front {
+        height: 90vh;
+    }
+    .hero-front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .hero-front > .img-container {
+        position: relative;
+        width: 90%;
+        padding: 1rem 0;
+        margin: 0;
+        aspect-ratio: 1.25 / 1;
+        top: 3rem;
+        left: 0;
+    }
+    .hero-front > .content {
+        position: relative;
+        margin: 0;
+        top: 4rem;
+        left: 1rem;
+        padding: 0;
+        width: 90%;
+    }
+    .hero-front > .content > h1 {
+        font-size: 3.5rem;
+        margin: 1rem 0;
+    }
+    .hero-front > .content > h3 {
+        font-size: 1.75rem;
+    }
+    .hero-front > .position-container {
+        display: none;
+    }
 
+}
+
+/*** BEST CO§URSES ***/
 .best-courses {
     display: flex;
     flex-direction: column;
@@ -172,6 +257,37 @@ nav {
     line-height: 1.75rem;
 }
 
+@media only screen and (max-width: 900px) {
+    .best-courses {
+        margin-top: calc(75vh + 5rem);
+    }
+    .best-courses > div {
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+}
+@media only screen and (max-width: 800px) {
+    .best-courses {
+        margin-top: calc(60vh + 5rem);
+    }
+    .best-courses > h2 {
+        font-size: 1.25rem;
+    }
+}
+@media only screen and (max-width: 650px) {
+    .best-courses {
+        margin-top: calc(90vh + 0rem);
+    }
+    .best-courses > div > img {
+        width: 90%;
+    }
+    .best-courses > div > p {
+        width: 90%;
+        font-size: medium;
+    }
+}
+
 span.line {
     display: block;
     margin: auto;
@@ -180,6 +296,7 @@ span.line {
     background-color: #414241;
 }
 
+/*** BUTTONS ***/
 .buttons-container {
     display: flex;
     column-gap: 5rem;
@@ -213,27 +330,69 @@ span.line {
     background-color: #465230;
 }
 
+@media only screen and (max-width: 650px) {
+    .buttons-container {
+        flex-direction: column;
+        row-gap: 2rem;
+        margin: 5rem 0;
+    }
+    .buttons-container > button {
+        width: 50%;
+        font-size: 1rem;
+    }
+}
+
+/*** FOOTER ***/
 footer {
-    width: 100%;
+    padding: 0 1rem;
     height: 10rem;
     background-color: #575F64;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    justify-content: center;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
     color: #FAF4EA;
     column-gap: 5rem;
 
 }
 footer > h1 {
-    margin: 0 auto;
+    margin: 0;
+    width: fit-content;
 }
 footer > div {
-    margin: 0 auto;
+    margin: 0;
     display: flex;
-    column-gap: 2rem;
+    column-gap: 1rem;
     font-weight: 100;
     font-size: large;
     justify-content: center;
     align-items: center;
+}
+footer > p {
+    width: fit-content;
+}
+
+@media only screen and (max-width: 1050px) {
+    footer {
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+    }
+    footer > h1 {
+        font-size: 1.25rem;
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+    footer > div {
+        display: block;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+    }
+    footer > p {
+        margin: 0.5rem 0;
+    }
+}
+@media only screen and (max-width: 650px) {
+    footer > h1 {
+        margin-bottom: 0.5rem;
+    }
 }

@@ -104,3 +104,21 @@ a:hover {
 #menuToggle input:checked ~ ul {
     opacity: 1;
 }
+
+@media only screen and (max-width: 1050px) {
+    #menuToggle {
+        top: 3rem;
+    }
+}
+@media only screen and (max-width: 600px) {
+    #menuToggle {
+        top: 2.85rem;
+    }
+    #menu {
+        width: calc(100vw - 100px);
+    }
+    #menu li {
+        padding: 10px 0;
+        font-size: 18px;
+    }
+}

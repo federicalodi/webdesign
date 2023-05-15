@@ -20,6 +20,9 @@ section.menu > div {
     justify-content: center;
     align-items: center;
 }
+section.menu > div > div {
+    width: 100%;
+}
 section.menu > div > div > ul {
     margin-left: 0rem;
     margin-right: 5rem;
@@ -33,4 +36,14 @@ section.menu > div > div > ul > li > p {
     margin: 0;
 }
 
-/* TO-DO: ridurre grid a una sola colonna per schermi piccoli*/
+/* 1050px and down */
+@media only screen and (max-width: 1050px) {
+    section.menu > div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    section.menu > div > div > ul {
+        margin-right: 0;
+    }
+}
