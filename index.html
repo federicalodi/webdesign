@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./hamburger.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://unpkg.com/scrollreveal"></script>
 
     <title>Sage Restaurant</title>
 </head>
@@ -45,7 +46,7 @@
             <h6>Piazza Gae Aulenti 4, Milano, MI</h6>
         </div>
     </section>
-    <section class="best-courses">
+    <section class="best-courses reveal">
         <h2><span></span>MIGLIORI PORTATE<span></span></h2>
         <div>
             <img src="./assets/insalata.jpg" alt="plate image">
@@ -61,7 +62,7 @@
         </div>
     </section>
     <span class="line"></span>
-    <section class="buttons-container">
+    <section class="buttons-container reveal">
         <button onclick="location.href ='./pages/menu.html';">MENU</button>
         <button onclick="location.href ='./pages/prenota.html';">PRENOTA</button>
     </section>
@@ -79,3 +80,14 @@
     </footer>
 </body>
 </html>
+
+<script>
+    const reveal = {
+        origin : 'bottom',
+        delay    : 200,
+        distance : '50px',
+        easing   : 'ease-in-out',
+    };
+    window.sr = ScrollReveal(reveal);
+    sr.reveal('.reveal')
+</script>
