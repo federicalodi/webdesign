@@ -1,0 +1,11 @@
+<svg width="66px" height="121px" viewBox="0 0 66 121" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>flame-restaurant-tricolor</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="flame-restaurant-tricolor">
+            <path class="top_flame" d="M41.1905379,40.2872743 C53.3863524,52.4044885 61.1688081,61.4430186 60.5486819,77.1013318 C65.8470602,67.2461746 70.6707741,49.41104 51.7582022,31.3457186 C37.0997468,17.3415856 34.0077926,6.40643914 33.8271139,2.13162821e-14 C28.6354075,7.67629419 22.8889051,22.1066044 41.1905379,40.2872743 Z" id="Fill-7-Copy" fill="#ACA338" style="opacity: 1; visibility: inherit; transform-origin: 0px 0px;" data-svg-origin="28.688261032104492 2.1316282072803006e-14" transform="matrix(1,0,0,1,0,0)"></path>
+            <path class="middle_flame" d="M19.4820391,21.9386855 C14.2898223,29.6149797 8.54383031,44.0417172 26.8469943,62.2244286 C39.0422984,74.3447051 46.8252645,83.3832353 46.2051383,99.0384861 C51.5019855,89.18486 56.3256993,71.3512566 37.4131274,53.2828729 C22.7577344,39.2802711 19.664249,28.3451246 19.4820391,21.9386855" id="Fill-8-Copy" fill="#737E3C" style="opacity: 1; visibility: inherit;"></path>
+            <path class="bottom_flame" d="M12.5034507,84.1513751 C24.6992652,96.2680788 32.4801897,105.307119 31.8600635,120.965433 C37.1574211,111.107213 41.9790934,93.2730992 23.0695838,75.2098194 C8.41470115,61.2072176 5.31917427,50.2705399 5.13849554,43.8641008 C-0.0532108784,51.5419261 -5.7992029,65.9686636 12.5034507,84.1513751 Z" id="Fill-10-Copy" fill="#465230" style="opacity: 1; visibility: inherit; transform-origin: 0px 0px;" data-svg-origin="-5.18022531537099e-8 43.86410140991211" transform="matrix(1,0,0,1,0,0)"></path>
+        </g>
+    </g>
+</svg>

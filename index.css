@@ -181,11 +181,11 @@ nav {
         width: 90%;
     }
     .hero-front > .content > h1 {
-        font-size: 3.5rem;
+        font-size: 3rem;
         margin: 1rem 0;
     }
     .hero-front > .content > h3 {
-        font-size: 1.75rem;
+        font-size: 1.25rem;
     }
     .hero-front > .position-container {
         display: none;
