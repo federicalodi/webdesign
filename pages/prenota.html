@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="it">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./prenota.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <title>Sage Restourant - Prenota</title>
+    <title>Sage Restaurant - Prenota</title>
 </head>
 <body>
     <nav role="navigation">
@@ -36,13 +36,66 @@
             </ul>
         </div>
     </nav>
+    <form method="post" action="salva.html">
     <section class="prenota">
         <h1>Prenota</h1>
+        <div class="form-text">
+            <p>
+               <label for="nome" title="Campo obbligatorio">* Nome:</label>
+               <input type="text" id="nome" name="nome" required="required" placeholder="es: Federica"/>
+            </p>
+            <p>
+               <label for="cognome" title="Campo obbligatorio">* Cognome:</label>
+               <input type="text" id="cognome" name="cognome" required="rquired" placeholder="es: Lodi"/>
+            </p>
+            <p> 
+               <label for="email">* E-mail:</label>
+               <input type="email" id="email" name="email" required="required" placeholder="es: utente@dominio.it"/>
+            </p>
+            <p> 
+               <label for="telefono">* Numero di telefono:</label>
+               <input type="tel" id="telefono" name="telefono" required="required"/>
+            </p>
+            <p> 
+               <label for="data"> * Data: </label>
+               <input type="date" id="data" name="data" required="required"/>
+               <label for="persone">Numero di persone:</label>
+               <input type="number" id="persone" name="persone"/>
+            </p>
+            <p>Se si desidera specificare la propria preferenza inerente la zona in cui si vorrebbe che venisse riservato il tavolo, è opportuno spuntare una delle due scelte:</p>
+        </div>
+            <ul>
+               <li>
+                   <label for="zona">Località interna</label>
+                   <input type="radio" id="zona" name="zona" value="interno"/>
+               </li>
+               <li>
+                   <label for="zona">Località esterna</label>
+                   <input type="radio" id="zona" name="zona" value="esterno"/>
+               </li>
+               <li>
+                   <label for="zona">Sala privata</label>
+                   <input type="radio" id="zona" name="zona" value="sala"/>
+               </li>
+            </ul>
+            <div class="privacy">
+            <p>
+               <input type="checkbox" id="privacy" name="privacy" value="si" checked="checked"/>
+               <label for="privacy">Ho preso visione dell'informativa per la protezione dei dati personali.</label>
+            </p>
+           </div>
+           <div class="oppure">
+            <p><input type="submit" value="Prenota"/> oppure <input type="reset" value="Ripristina"/></p>
+           </div>
+           <div class="asterisco">
+               <p>I campi contrassegnati da asterisco (*) sono obbligatori.</p>
+           </div>
+       </form>
     </section>
     <footer>
         <h1>Contatta Sage Restaurant</h1>
-        <p><span style="font-size: medium; margin-right: .5rem;">phone:</span>+39 3252754765</p>
-        <p><span style="font-size: medium; margin-right: .5rem;">e-mail:</span>restourant-mail@gmail.com</p>
+        <p><span style="font-size: medium; margin-right: .5rem;">phone:</span>+39 3392754765</p>
+        <p><span style="font-size: medium; margin-right: .5rem;">e-mail:</span>sage_restaurant@gmail.com</p>
         <div>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-square-twitter"></i>
