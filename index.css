@@ -16,6 +16,7 @@ nav {
     width: 10rem;
     height: auto;
 }
+
 @media only screen and (max-width: 1050px) {
     .nav-logo {
         width: 7.5rem;
@@ -83,11 +84,13 @@ nav {
     width: fit-content;
     left: 45%;
 }
+
 .hero-front > .content > h1 {
     font-size: 5rem;
     margin: 2rem 0;
     font-weight: 500;
 }
+
 .hero-front > .content > h3 {
     font-size: 2.5rem;
     margin: 0;
@@ -106,9 +109,11 @@ nav {
     bottom: -3rem;
     right: 0;
 }
+
 .hero-front > .position-container > i {
     font-size: 0.8rem;
 }
+
 .hero-front > .position-container > h6 {
     font-weight: 500;
     margin: 0;
@@ -122,6 +127,7 @@ nav {
         font-size: 2rem;
     }
 }
+
 @media only screen and (max-width: 900px) {
     .hero {
         height: 75vh;
@@ -136,6 +142,7 @@ nav {
         font-size: 1.75rem;
     }
 }
+
 @media only screen and (max-width: 800px) {
     .hero {
         height: 60vh;
@@ -150,6 +157,7 @@ nav {
         font-size: 1.5rem;
     }
 }
+
 @media only screen and (max-width: 650px) {
     .hero {
         height: 90vh;
@@ -210,6 +218,7 @@ nav {
     align-items: center;
     justify-content: center;
 }
+
 .best-courses > h2 > span {
     display: block;
     margin-right: 1.5rem;
@@ -217,6 +226,7 @@ nav {
     height: 0.25rem;
     background-color: #414241;
 }
+
 .best-courses > h2 > span:nth-child(2) {
     margin-right: 0;
     margin-left: 1.5rem;
@@ -225,12 +235,14 @@ nav {
 .best-courses > div:nth-child(2) {
     margin-top: -5rem;
 }
+
 .best-courses > div {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
     justify-content: center;
 }
+
 .best-courses > div:nth-child(3) > img {
     grid-column: 2;
     grid-row: 1;
@@ -247,6 +259,7 @@ nav {
     border-radius: 1rem;
     box-shadow: 0px 15px 25px 0px #414241;
 }
+
 .best-courses > div > p {
     width: 70%;
     height: auto;
@@ -267,6 +280,7 @@ nav {
         row-gap: 3rem;
     }
 }
+
 @media only screen and (max-width: 800px) {
     .best-courses {
         margin-top: calc(60vh + 5rem);
@@ -275,6 +289,7 @@ nav {
         font-size: 1.25rem;
     }
 }
+
 @media only screen and (max-width: 650px) {
     .best-courses {
         margin-top: calc(90vh + 0rem);
@@ -317,14 +332,17 @@ span.line {
     transition: all ease 0.3s;
     border: solid 2px #465230;
 }
+
 .buttons-container > button:nth-child(2) {
     color: #465230;
     background-color: #FAF4EA;
 }
+
 .buttons-container > button:hover {
     color: #465230;
     background-color: #FAF4EA;
 }
+
 .buttons-container > button:nth-child(2):hover {
     color: #FAF4EA;
     background-color: #465230;
@@ -354,10 +372,12 @@ footer {
     column-gap: 5rem;
 
 }
+
 footer > h1 {
     margin: 0;
     width: fit-content;
 }
+
 footer > div {
     margin: 0;
     display: flex;
@@ -367,6 +387,7 @@ footer > div {
     justify-content: center;
     align-items: center;
 }
+
 footer > p {
     width: fit-content;
 }
@@ -391,6 +412,7 @@ footer > p {
         margin: 0.5rem 0;
     }
 }
+
 @media only screen and (max-width: 650px) {
     footer > h1 {
         margin-bottom: 0.5rem;

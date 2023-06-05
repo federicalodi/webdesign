@@ -33,6 +33,7 @@
                 <a href="../index.html"><li><i class="fa-solid fa-house fa-xs" style="margin-right: .5rem;"></i>Home</li></a>
                 <a href="./menu.html"><li><i class="fa-solid fa-newspaper fa-xs" style="margin-right: .5rem;"></i>Menu</li></a>
                 <a href="#"><li><i class="fa-solid fa-calendar fa-xs" style="margin-right: .5rem;"></i>Prenota</li></a>
+                <a href="./galleria.html"><li><i class="fa-solid fa-calendar fa-xs" style="margin-right: .5rem;"></i>Galleria</li></a>
             </ul>
         </div>
     </nav>
@@ -54,16 +55,18 @@
             </p>
             <p> 
                <label for="telefono">* Numero di telefono:</label>
-               <input type="tel" id="telefono" name="telefono" required="required"/>
+               <input type="tel" id="telefono" name="telefono" maxlength="10" required="required"/>
             </p>
             <p> 
                <label for="data"> * Data: </label>
                <input type="date" id="data" name="data" required="required"/>
-               <label for="persone">Numero di persone:</label>
-               <input type="number" id="persone" name="persone"/>
             </p>
-            <p>Se si desidera specificare la propria preferenza inerente la zona in cui si vorrebbe che venisse riservato il tavolo, è opportuno spuntare una delle due scelte:</p>
+            <p>
+               <label for="numero"> * Numero di persone:</label>
+               <input type="number" id="numero" name="numero" required="required" min="2" max="15"/>
+            </p>
         </div>
+        <p>Se si desidera specificare la propria preferenza inerente la zona in cui si vorrebbe che venisse riservato il tavolo, è opportuno spuntare una delle tre scelte:</p>
             <ul>
                <li>
                    <label for="zona">Località interna</label>
@@ -78,15 +81,29 @@
                    <input type="radio" id="zona" name="zona" value="sala"/>
                </li>
             </ul>
-            <div class="privacy">
+        <p>Vi è, inoltre, la possibilità di indicare qualsiasi tipo di esigenza particolare, allergia o nota aggiuntiva all'interno dello spazio sottostante.</p>
+            <label for="selezione"></label>
+            <select name="selezione" id="selezione">
+                <option>Seleziona un'opzione</option>
+                <option>Esigenza particolare</option>
+                <option>Allergia</option>
+                <option>Nota aggiuntiva</option>
+                <option>Altro</option>
+            </select>
+            <label for="note">Note</label>
+            <textarea id="note" name="note" placeholder="Digita qui."></textarea>
+        <p>Desideri collaborare con noi? Vuoi far parte della nostra community? Inviaci subito il tuo Curriculm Vitae ed eventualmente verrai ricontattato/a!</p>
+            <label for="cv">Carica qui il file in formato pdf</label>
+            <input type="file" id="cv" name="cv"/>
+        <div class="privacy">
             <p>
                <input type="checkbox" id="privacy" name="privacy" value="si" checked="checked"/>
                <label for="privacy">Ho preso visione dell'informativa per la protezione dei dati personali.</label>
             </p>
-           </div>
-           <div class="oppure">
+        </div>
+            <div class="oppure">
             <p><input type="submit" value="Prenota"/> oppure <input type="reset" value="Ripristina"/></p>
-           </div>
+            </div>
            <div class="asterisco">
                <p>I campi contrassegnati da asterisco (*) sono obbligatori.</p>
            </div>
@@ -96,6 +113,7 @@
         <h1>Contatta Sage Restaurant</h1>
         <p><span style="font-size: medium; margin-right: .5rem;">phone:</span>+39 3392754765</p>
         <p><span style="font-size: medium; margin-right: .5rem;">e-mail:</span>sage_restaurant@gmail.com</p>
+        <p><span style="font-size: medium; margin-right: .5rem;">orari:</span><a href="./orari.html">visualizza tabella</a></p>
         <div>
             <i class="fa-brands fa-instagram"></i>
             <i class="fa-brands fa-square-twitter"></i>
