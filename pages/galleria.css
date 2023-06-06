@@ -2,3 +2,36 @@ body {
     background-color: #465230;
     color: #FAF4EA;
 }
+section.galleria {
+    padding: 0 3rem;
+    margin-bottom: 5rem;
+    text-align: center;
+    justify-content: center;
+}
+
+section.galleria > h1 {
+    font-size: 2rem;
+    text-align: left;
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+dl dt {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: underline;
+    margin-bottom: 0.5rem;
+}
+
+dl dd {
+    font-weight: lighter;
+}
+
+iframe {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+video {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}

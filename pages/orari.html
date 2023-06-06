@@ -1,14 +1,52 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
+    
     <meta charset="UTF-8">
-    <title>ORARI-tabella</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="manifest" href="../manifest.json" />
+    <link rel="icon" href="../assets/favicon-32x32.png" sizes="32x32">
+    <link rel="icon" href="../assets/favicon-192x192.png" sizes="192x192">
+    <link rel="apple-touch-icon" href="../assets/favicon-180x180.png">
+
+    <link rel="stylesheet" href="../index.css">
+    <link rel="stylesheet" href="../hamburger.css">
+    <link rel="stylesheet" href="./prenota.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="../pages/orari.css"/>
+   
+    <title>Sage Restaurant - Orari </title>
 </head>
 <body>
+    <nav role="navigation">
+        <div class="left-nav">
+            <a href="../index.html">
+                <img src="../assets/white_logo.svg" alt="logo" class="nav-logo">
+            </a>
+        </div>
+        <div id="menuToggle">
+            <input type="checkbox" />
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="../index.html"><li><i class="fa-solid fa-house fa-xs" style="margin-right: .5rem;"></i>Home</li></a>
+                <a href="./menu.html"><li><i class="fa-solid fa-newspaper fa-xs" style="margin-right: .5rem;"></i>Menu</li></a>
+                <a href="./prenota.html"><li><i class="fa-solid fa-calendar fa-xs" style="margin-right: .5rem;"></i>Prenota</li></a>
+                <a href="./galleria.html"><li><i class="fa-solid fa-photo-film fa-xs" style="margin-right: .5rem;"></i>Galleria</li></a>
+            </ul>
+        </div>
+    </nav>
+<section class="orari">
     <h1>Orari</h1>
         <p>Per garantire un'ottima qualità del servizio e delle nostre pietanze abbiamo stilato una tabella di orari mirati a soddisfare sia le esigenze del nostro personale sia quelle della nostra clientela, vi ringraziamo per la comprensione e ci auguriamo che possiate trovarvi al meglio all'interno del nostro ristorante.</p>
 <table>
-    <caption>Per effettuare una prenotazione potete cliccare direttamente <a href="./prenota.html">qui</a>.</caption>
+    <caption>tabella orari</caption>
     <thead>
         <tr>
             <th>Giorno</th>
@@ -53,5 +91,18 @@
     </tr>
     </tfoot>
 </table>
+<p1>Per effettuare una prenotazione potete cliccare direttamente <a href="./prenota.html">qui</a>.</p1>
+</section>
+<footer>
+    <h1>Contatta Sage Restaurant</h1>
+    <p><span style="font-size: medium; margin-right: .5rem;">phone:</span>+39 3392754765</p>
+    <p><span style="font-size: medium; margin-right: .5rem;">e-mail:</span>sage_restaurant@gmail.com</p>
+    <p><span style="font-size: medium; margin-right: .5rem;">orari:</span><a href="./orari.html">visualizza tabella</a></p>
+    <div>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-square-twitter"></i>
+        <i class="fa-brands fa-square-facebook"></i>
+    </div>
+</footer>
 </body>
 </html>

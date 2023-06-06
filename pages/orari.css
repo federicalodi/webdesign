@@ -1,0 +1,69 @@
+body {
+    color: #414241;
+}
+
+nav {
+    background-color: #575F64;
+}
+
+section.orari {
+    padding: 0 3rem;
+    margin-top: 12rem;
+    margin-bottom: 12rem;
+    align-items: center;
+    justify-content: center;
+}
+
+section.orari > h1 {
+    font-size: 2rem;
+}
+
+caption {
+    visibility: hidden;
+}
+
+table {
+    border: thin solid #575f6485;
+    background-color: none;
+    margin-bottom: 2rem;
+}
+
+thead th {
+    color:#575f6488;
+    font-family: 'Montserrat', sans-serif;
+    text-transform: lowercase;
+    text-transform: capitalize;
+    text-align: center;
+    justify-content: center;
+}
+
+tbody tr td {
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+tbody tr th {
+    font-weight: bold;
+}
+
+tfoot th {
+    font-weight: bold;
+}
+
+tfoot td {
+    color:#575f6488;
+    text-align: center;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-style: italic;
+    font-weight: bold;
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+
+p1 a {
+    color:#414241;
+}
+
+
+
