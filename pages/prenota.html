@@ -40,6 +40,7 @@
     <form method="post" action="salva.html">
     <section class="prenota">
         <h1>Prenota</h1>
+        <main>
         <div class="form-text">
             <p>
                <label for="nome" title="Campo obbligatorio">* Nome:</label>
@@ -65,8 +66,7 @@
                <label for="numero"> * Numero di persone:</label>
                <input type="number" id="numero" name="numero" required="required" min="2" max="15"/>
             </p>
-        </div>
-        <p>Se si desidera specificare la propria preferenza inerente la zona in cui si vorrebbe che venisse riservato il tavolo, è opportuno spuntare una delle tre scelte:</p>
+            <p>Se si desidera specificare la propria preferenza inerente la zona in cui si vorrebbe che venisse riservato il tavolo, è opportuno spuntare una delle tre scelte:</p>
             <ul>
                <li>
                    <label for="zona">Località interna</label>
@@ -81,7 +81,12 @@
                    <input type="radio" id="zona" name="zona" value="sala"/>
                </li>
             </ul>
+        </div>
+        </main>
+    <aside> 
+    <div>
         <p>Vi è, inoltre, la possibilità di indicare qualsiasi tipo di esigenza particolare, allergia o nota aggiuntiva all'interno dello spazio sottostante.</p>
+        <p>
             <label for="selezione"></label>
             <select name="selezione" id="selezione">
                 <option>Seleziona un'opzione</option>
@@ -90,8 +95,11 @@
                 <option>Nota aggiuntiva</option>
                 <option>Altro</option>
             </select>
-            <label for="note">Note</label>
+        </p>
+        <p>
+            <label for="note"></label>
             <textarea id="note" name="note" placeholder="Digita qui."></textarea>
+        </p>
         <p>Desideri collaborare con noi? Vuoi far parte della nostra community? Inviaci subito il tuo Curriculm Vitae ed eventualmente verrai ricontattato/a!</p>
             <label for="cv">Carica qui il file in formato pdf</label>
             <input type="file" id="cv" name="cv"/>
@@ -107,8 +115,11 @@
            <div class="asterisco">
                <p>I campi contrassegnati da asterisco (*) sono obbligatori.</p>
            </div>
-       </form>
+    </div>
+    </aside>
+    </form>
     </section>
+
     <footer>
         <h1>Contatta Sage Restaurant</h1>
         <p><span style="font-size: medium; margin-right: .5rem;">phone:</span>+39 3392754765</p>
