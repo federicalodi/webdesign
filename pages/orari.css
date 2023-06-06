@@ -8,8 +8,8 @@ nav {
 
 section.orari {
     padding: 0 3rem;
-    margin-top: 12rem;
-    margin-bottom: 12rem;
+    margin-top: 11rem;
+    margin-bottom: 11rem;
     align-items: center;
     justify-content: center;
 }
@@ -19,12 +19,13 @@ section.orari > h1 {
 }
 
 caption {
-    visibility: hidden;
+    display: none;
 }
 
 table {
     border: thin solid #575f6485;
     background-color: none;
+    margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
