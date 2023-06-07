@@ -45,49 +45,50 @@
 <section class="orari">
     <h1>Orari</h1>
         <p>Per garantire un'ottima qualità del servizio e delle nostre pietanze abbiamo stilato una tabella di orari mirati a soddisfare sia le esigenze del nostro personale sia quelle della nostra clientela, vi ringraziamo per la comprensione e ci auguriamo che possiate trovarvi al meglio all'interno del nostro ristorante.</p>
-<table>
+<table class="table">
     <caption>tabella orari</caption>
     <thead>
         <tr>
-            <th>Giorno</th>
-            <th colspan="2">Orario</th>
+            <th scope="col" id="giorno">Giorno</th>
+            <th scope="col" id="mattina">Mattina</th>
+            <th scope="col" id="pomeriggio">Pomeriggio</th>
         </tr>
     </thead>
     <tbody>
     <tr>
-        <th id="lun">Lunedì</th>
-        <td headers="lun">12-15</td>
-        <td headers="lun">19-22</td>
+        <th scope="row" id="lun" headers="giorno lun">Lunedì</th>
+        <td headers="lun matt">12-15</td>
+        <td headers="lun pom">19-22</td>
     </tr>
     <tr>
-        <th id="mar">Martedì</th>
-        <td headers="mar">12-15</td>
-        <td headers="mar">19-22</td>
+        <th scope="row" id="mar" headers="giorno mar">Martedì</th>
+        <td headers="mar matt">12-15</td>
+        <td headers="mar pom">19-22</td>
     </tr>
     <tr>
-        <th id="mer">Mercoledì</th>
-        <td headers="mer">12-15</td>
-        <td headers="mer">19-22</td>
+        <th scope="row" id="mer" headers="giorno mer">Mercoledì</th>
+        <td headers="mer matt">12-15</td>
+        <td headers="mer pom">19-22</td>
     </tr>
     <tr>
-        <th id="gio">Giovedì</th>
-        <td headers="gio">12-16</td>
-        <td headers="gio">19-23</td>
+        <th scope="row" id="gio" headers="giorno gio">Giovedì</th> 
+        <td headers="gio matt">12-16</td>
+        <td headers="gio pom">19-23</td>
     </tr>
     <tr>
-        <th id="ven">Venerdì</th>
-        <td rowspan="2" headers="ven">11-16</td>
-        <td rowspan="2" headers="ven">18-23</td>
+        <th scope="row" id="ven" headers="giorno ven">Venerdì</th>
+        <td rowspan="2" headers="ven e sab matt">11-16</td>
+        <td rowspan="2" headers="ven e sab pom">18-23</td>
     </tr>
     <tr>
-        <th id="sab">Sabato</th>
+        <th scope="row" id="sab" headers="giorno sab">Sabato</th>
         <td headers="sab"></td>
     </tr>
     </tbody>
     <tfoot>
     <tr>
-        <th id="dom">Domenica</th>
-        <td colspan="2" headers="dom">CHIUSO</td>
+        <th scope="row" id="dom" headers="giorno dom">Domenica</th>
+        <td colspan="2" headers="dom matt e pom">CHIUSO</td>
     </tr>
     </tfoot>
 </table>

@@ -8,6 +8,7 @@ nav {
 
 section.prenota {
     padding: 0 5rem;
+    max-width: 100%;
     margin-top: 3rem;
     margin-bottom: 2rem;
 }
@@ -17,7 +18,7 @@ section.prenota > h1 {
 }
 
 main {
-    width: 45%;
+    width: 49%;
     float: left;
     overflow: hidden;
     margin-bottom: 6rem;
@@ -25,13 +26,13 @@ main {
 }
 
 aside {
-    width: 45%;
+    width: 49%;
     float: right;
     overflow: hidden;
     margin-bottom: 6rem;
     justify-content: justify;
 }
 
-nav, footer {
+footer {
     width: 98%;
 }

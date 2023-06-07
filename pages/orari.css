@@ -11,7 +11,7 @@ section.orari {
     margin-top: 11rem;
     margin-bottom: 11rem;
     align-items: center;
-    justify-content: center;
+    justify-content: justify;
 }
 
 section.orari > h1 {
@@ -22,15 +22,18 @@ caption {
     display: none;
 }
 
-table {
+.table {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
     border: thin solid #575f6485;
-    background-color: none;
+    border-style: dashed;
     margin-top: 2rem;
     margin-bottom: 2rem;
 }
 
-thead th {
-    color:#575f6488;
+.table thead tr th {
+    color:#FAF4EA;
     font-family: 'Montserrat', sans-serif;
     text-transform: lowercase;
     text-transform: capitalize;
@@ -38,21 +41,20 @@ thead th {
     justify-content: center;
 }
 
-tbody tr td {
+.table tbody tr td {
     font-size: 1rem;
     font-weight: lighter;
 }
 
-tbody tr th {
+.table tbody tr th {
     font-weight: bold;
 }
 
-tfoot th {
+.table tfoot tr th {
     font-weight: bold;
 }
 
-tfoot td {
-    color:#575f6488;
+.table tfoot tr td {
     text-align: center;
     justify-content: center;
     font-family: 'Montserrat', sans-serif;
@@ -66,5 +68,13 @@ p1 a {
     color:#414241;
 }
 
+thead {
+    width: 100%;
+    background-color: #465230b5;
+}
 
+tbody, tfoot {
+    width: 100%;
+    background-color: #4652303a;
+}
 
