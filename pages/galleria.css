@@ -24,6 +24,7 @@ dl dt {
 
 dl dd {
     font-weight: lighter;
+    margin-left: 0
 }
 
 iframe {

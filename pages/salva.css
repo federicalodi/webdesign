@@ -13,7 +13,7 @@ section.salvataggio {
     margin-top: 12rem;
     margin-bottom: 14rem;
     align-items: center;
-    justify-content: center;
+    justify-content: justify;
 }
 
 section.salvataggio > h1 {
