@@ -20,8 +20,8 @@ section.prenota > h1 {
 }
 
 main {
-    width: 50%;
-    float: inline-start;
+    width: 48%;
+    float: left;
     overflow: hidden;
     margin-bottom: 6rem;
     justify-content: justify;
@@ -29,7 +29,7 @@ main {
 
 aside {
     width: 50%;
-    float: inline-end;
+    float: right;
     overflow: hidden;
     margin-bottom: 6rem;
     justify-content: justify;
